@@ -1,5 +1,6 @@
+package basicprintstmnts;
 
-    public class Student {
+public class Student {
 
         private String name;
 
