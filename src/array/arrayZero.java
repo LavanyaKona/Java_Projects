@@ -1,8 +1,8 @@
-package Array;
+package array;
 
 import java.util.Scanner;
 
-public class linearSearch {
+public class arrayZero {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter array size");
@@ -12,12 +12,22 @@ public class linearSearch {
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
-        System.out.println("Enter element to be searched");
-        int s=sc.nextInt();
+        int j=0;
         for(int i=0;i<n;i++)
         {
-            if(s==a[i])
-                System.out.println("Element is in position "+i);
+            if(a[i]!=0)
+            {
+              a[j]=a[i];
+              j++;
+            }
+        }
+        while (j < n) {
+            a[j] = 0;
+            j++;
+        }
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(a[i]+" ");
         }
     }
 }
