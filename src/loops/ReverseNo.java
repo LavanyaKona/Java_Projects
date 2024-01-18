@@ -1,8 +1,8 @@
-package Loops;
+package loops;
 
 import java.util.Scanner;
 
-public class reverseNo {
+public class ReverseNo {
     public static void main(String[] args){
         System.out.println("Enter the number");
         Scanner sc=new Scanner(System.in);

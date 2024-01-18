@@ -1,8 +1,8 @@
-package Loops;
+package loops;
 
 import java.util.Scanner;
 
-public class age {
+public class Age {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
 
