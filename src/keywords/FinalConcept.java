@@ -1,3 +1,5 @@
+package keywords;
+
 final class FinalConcept {
     final int var = 100;
     final void final_method() {

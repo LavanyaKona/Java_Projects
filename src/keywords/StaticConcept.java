@@ -1,3 +1,5 @@
+package keywords;
+
 public class StaticConcept {
     private static int var;
 
