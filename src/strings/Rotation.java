@@ -17,7 +17,6 @@ public class Rotation {
             String concat=s1+s1;
 
             System.out.print(concat.contains(s2));
-
         }
     }
 }

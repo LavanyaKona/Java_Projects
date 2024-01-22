@@ -22,6 +22,5 @@ public class ReverseWord {
         {
             System.out.print(sa[i]+" ");
         }
-
     }
 }

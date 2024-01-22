@@ -19,7 +19,6 @@ public class VowelCount {
                 count++;
 
         }
-
         System.out.println("Total number of vowels in a string"+ var+" is: "+ count);
     }
 
