@@ -47,6 +47,8 @@ public class Product implements Comparable<Product> {
         List<Product> productList = new ArrayList<>(Arrays.asList(product1, product2));
 
         System.out.println("CompareTo return value: "+product1.compareTo(product2));
+        System.out.println("CompareTo return value: "+product2.compareTo(product1));
+
 
 
     }
