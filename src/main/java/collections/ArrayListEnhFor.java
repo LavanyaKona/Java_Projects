@@ -2,6 +2,7 @@ package collections;
 
 import java.util.ArrayList;
 
+
 public class ArrayListEnhFor {
         public static void traverseArrayList(ArrayList<String> stocks) {
             for (String stock : stocks) {

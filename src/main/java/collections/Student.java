@@ -1,5 +1,4 @@
 package collections;
-
 public class Student {
 
     private String firstName;

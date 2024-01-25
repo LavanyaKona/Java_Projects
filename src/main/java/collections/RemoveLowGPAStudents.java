@@ -5,6 +5,7 @@ import java.util.ListIterator;
 
 public class RemoveLowGPAStudents {
 
+
     public static ArrayList<Student> removeLowGPAStudents(ArrayList<Student> students) {
         if (students != null && !students.isEmpty()) {
             double totalGPA = 0.0;

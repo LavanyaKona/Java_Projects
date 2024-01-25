@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class ArrayListForLoop {
 
+
     public static void traverseArrayList(ArrayList<String> stocks) {
         for (int i = 0; i < stocks.size(); i++) {
             String stock = stocks.get(i);

@@ -1,5 +1,4 @@
 package collections;
-
 import java.util.List;
 
 public class ArrayListToStringArrayConverter {
