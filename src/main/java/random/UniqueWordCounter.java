@@ -17,7 +17,14 @@ public class UniqueWordCounter {
             wordCountMap.put(word, wordCountMap.getOrDefault(word, 0) + 1);
         }
 
-        return wordCountMap;
+        Map<String, Integer> uniqueWordCountMap = new HashMap<>();
+        for (Map.Entry<String, Integer> entry : wordCountMap.entrySet()) {
+            if (entry.getValue() == 1) {
+                uniqueWordCountMap.put(entry.getKey(), entry.getValue());
+            }
+        }
+
+        return uniqueWordCountMap;
     }
 }
 
