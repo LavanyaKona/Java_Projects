@@ -1,5 +1,4 @@
 package random;
-
 import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.TreeMap;
@@ -11,14 +10,17 @@ public class HashMapSorterTest {
     public void testSortHashMap_Positive() {
         HashMap<Integer, String> hashMap = new HashMap<>();
         hashMap.put(1, "One");
-        hashMap.put(2, "Two");
         hashMap.put(3, "Three");
+        hashMap.put(2, "Two");
 
         TreeMap<Integer, String> sortedMap = HashMapSorter.sortHashMap(hashMap);
 
-        assertEquals("One", sortedMap.get(1));
-        assertEquals("Two", sortedMap.get(2));
-        assertEquals("Three", sortedMap.get(3));
+        TreeMap<Integer, String> expectedSortedMap = new TreeMap<>();
+        expectedSortedMap.put(1, "One");
+        expectedSortedMap.put(2, "Two");
+        expectedSortedMap.put(3, "Three");
+
+        assertEquals(expectedSortedMap, sortedMap);
     }
 
     @Test
@@ -30,9 +32,12 @@ public class HashMapSorterTest {
 
         TreeMap<Integer, String> sortedMap = HashMapSorter.sortHashMap(hashMap);
 
-        assertEquals("Minus One", sortedMap.get(-1));
-        assertEquals("Minus Two", sortedMap.get(-2));
-        assertEquals("Minus Three", sortedMap.get(-3));
+        TreeMap<Integer, String> expectedSortedMap = new TreeMap<>();
+        expectedSortedMap.put(-3, "Minus Three");
+        expectedSortedMap.put(-2, "Minus Two");
+        expectedSortedMap.put(-1, "Minus One");
+
+        assertEquals(expectedSortedMap, sortedMap);
     }
 
     @Test
@@ -42,7 +47,10 @@ public class HashMapSorterTest {
 
         TreeMap<Integer, String> sortedMap = HashMapSorter.sortHashMap(hashMap);
 
-        assertEquals("Zero", sortedMap.get(0));
+        TreeMap<Integer, String> expectedSortedMap = new TreeMap<>();
+        expectedSortedMap.put(0, "Zero");
+
+        assertEquals(expectedSortedMap, sortedMap);
     }
 
     @Test
@@ -52,4 +60,3 @@ public class HashMapSorterTest {
         });
     }
 }
-

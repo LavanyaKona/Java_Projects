@@ -8,8 +8,6 @@ public class IntegerSwapper {
         int a = arr[0];
         int b = arr[1];
 
-        System.out.println("Before swapping: a = " + a + ", b = " + b);
-
         a = a + b;
         b = a - b;
         a = a - b;
@@ -17,7 +15,6 @@ public class IntegerSwapper {
         arr[0] = a;
         arr[1] = b;
 
-        System.out.println("After swapping: a = " + a + ", b = " + b);
     }
 }
 
